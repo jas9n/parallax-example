@@ -9,7 +9,6 @@ gsap.set(".splash", {
   position: "fixed",
   background: "#fff",
   width: "100%",
-
   height: "100%",
   top: 0,
   left: "50%",
@@ -25,8 +24,14 @@ gsap
       scrub: 1,
     },
   })
-  .fromTo(".sky", { y: 0 }, { y: -250 }, 0)
-  .fromTo(".cloud1", { y: 100 }, { y: -970 }, 0);
+  .fromTo(".bg", { y: 0 }, { y: -250 }, 0)
+  .fromTo(".cloud1", { y: 100 }, { y: -800 }, 0)
+  .fromTo(".cloud2", { y: -150 }, { y: -500 }, 0)
+  .fromTo(".cloud3", { y: -50 }, { y: -575 }, 0);
+
+// document.querySelector("#arrowBtn").addEventListener("scroll", () => {
+//   document.querySelector("#arrowBtn").style.display = "none";
+// });
 
 document.querySelector("#arrowBtn").addEventListener("mouseenter", () => {
   gsap.to(".arrow-down", {
