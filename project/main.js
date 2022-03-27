@@ -49,8 +49,8 @@ gsap
   .fromTo(".cloud3", { y: -50 }, { y: -575 }, 0)
   .to(".explore", { opacity: 0.3 }, 0)
   .to(".arrow-down", { opacity: 0 }, 0)
-  .from(".iceland", { opacity: 0.3, ease: "power2.out" }, 0)
-  .from(".go", { y: -25, opacity: 0, ease: "power1.out" }, "-=.35");
+  .from(".iceland", { opacity: 0.3 }, 0)
+  .from(".go", { y: -20, opacity: 0 }, "-=.3");
 
 document.querySelector("#arrowBtn").addEventListener("mouseenter", () => {
   gsap.to(".arrow-down", {
