@@ -50,7 +50,7 @@ gsap
   .to(".explore", { opacity: 0.3 }, 0)
   .to(".arrow-down", { opacity: 0 }, 0)
   .from(".iceland", { opacity: 0.3 }, 0)
-  .from(".go", { y: -20, opacity: 0 }, "-=.3");
+  .from(".go", { y: -20, opacity: 0 }, "-=.35");
 
 document.querySelector("#arrowBtn").addEventListener("mouseenter", () => {
   gsap.to(".arrow-down", {
