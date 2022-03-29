@@ -3,9 +3,9 @@ import gsap from "gsap";
 import scrollTo from "gsap/ScrollToPlugin";
 import scrollTrigger from "gsap/ScrollTrigger";
 
-// window.onbeforeunload = () => {
-//   window.scrollTo(0, 0);
-// };
+window.onbeforeunload = () => {
+  window.scrollTo(0, 0);
+};
 
 gsap.registerPlugin(scrollTo, scrollTrigger);
 
@@ -78,18 +78,25 @@ document.querySelector("#arrowBtn").addEventListener("click", () => {
 
 document.querySelector(".go").addEventListener("mouseenter", () => {
   gsap.to(".go", {
-    y: -5,
+    y: -4,
     duration: 0.5,
     ease: "power3.out",
     overwrite: "auto",
   });
   gsap.to(".arrow-right", {
     x: 12,
-    opacity: 0.5,
+    opacity: 0.6,
     duration: 0.7,
     ease: "power3.out",
     overwrite: "auto",
   });
+  // gsap.to(".underline", {
+  //   y: 10,
+  //   opacity: 0.5,
+  //   duration: 0.7,
+  //   ease: "power3.out",
+  //   overwrite: "auto",
+  // });
 });
 document.querySelector(".go").addEventListener("mouseleave", () => {
   gsap.to(".go", {
@@ -99,10 +106,17 @@ document.querySelector(".go").addEventListener("mouseleave", () => {
     overwrite: "auto",
   });
   gsap.to(".arrow-right", {
-    x: -12,
+    x: -6,
     opacity: 0,
     duration: 0.4,
     ease: "power2.in",
     overwrite: "auto",
   });
+  // gsap.to(".underline", {
+  //   y: 0,
+  //   opacity: 0,
+  //   duration: 0.4,
+  //   ease: "power2.in",
+  //   overwrite: "auto",
+  // });
 });
