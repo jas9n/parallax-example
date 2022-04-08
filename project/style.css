@@ -11,10 +11,6 @@ html {
   text-align: center;
 }
 
-.scrollDist {
-  position: absolute;
-}
-
 text {
   font-size: 99px;
   font-family: "Montserrat", sans-serif;

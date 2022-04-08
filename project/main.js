@@ -19,7 +19,7 @@ gsap.set(".splash", {
   x: "-50%",
 });
 
-gsap.set(".scrollDist", { width: "100%", height: "200%" });
+gsap.set(".scroll", { width: "100%", height: "200%" });
 
 gsap
   .timeline({ defaults: { duration: 1 } })
@@ -37,7 +37,7 @@ gsap
 gsap
   .timeline({
     scrollTrigger: {
-      trigger: ".scrollDist",
+      trigger: ".scroll",
       start: "top top",
       end: "bottom bottom",
       scrub: 1,
