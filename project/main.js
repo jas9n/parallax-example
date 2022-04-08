@@ -77,12 +77,12 @@ document.querySelector("#arrowBtn").addEventListener("click", () => {
 });
 
 document.querySelector(".go").addEventListener("mouseenter", () => {
-  gsap.to(".go", {
-    y: -4,
-    duration: 0.5,
-    ease: "power3.out",
-    overwrite: "auto",
-  });
+  // gsap.to(".go", {
+  //   y: -4,
+  //   duration: 0.5,
+  //   ease: "power3.out",
+  //   overwrite: "auto",
+  // });
   gsap.to(".arrow-right", {
     x: 12,
     opacity: 0.6,
@@ -90,21 +90,14 @@ document.querySelector(".go").addEventListener("mouseenter", () => {
     ease: "power3.out",
     overwrite: "auto",
   });
-  // gsap.to(".underline", {
-  //   y: 10,
-  //   opacity: 0.5,
-  //   duration: 0.7,
-  //   ease: "power3.out",
-  //   overwrite: "auto",
-  // });
 });
 document.querySelector(".go").addEventListener("mouseleave", () => {
-  gsap.to(".go", {
-    y: 0,
-    duration: 0.25,
-    ease: "power2.out",
-    overwrite: "auto",
-  });
+  // gsap.to(".go", {
+  //   y: 0,
+  //   duration: 0.25,
+  //   ease: "power2.out",
+  //   overwrite: "auto",
+  // });
   gsap.to(".arrow-right", {
     x: -6,
     opacity: 0,
@@ -112,11 +105,4 @@ document.querySelector(".go").addEventListener("mouseleave", () => {
     ease: "power2.in",
     overwrite: "auto",
   });
-  // gsap.to(".underline", {
-  //   y: 0,
-  //   opacity: 0,
-  //   duration: 0.4,
-  //   ease: "power2.in",
-  //   overwrite: "auto",
-  // });
 });
